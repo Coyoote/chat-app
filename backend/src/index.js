@@ -30,7 +30,7 @@ app.use("/api/messages", messageRoutes);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__driname, "../frontend/dist")));
   app.get("*", (_, res) => {
-    res.sendFile(path.joib(__dirname, "../frontend", "dist", "index.html"));
+    res.sendFile(path.joib(__driname, "../frontend", "dist", "index.html"));
   });
 }
 
